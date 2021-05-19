@@ -27,8 +27,10 @@ int main(int argc, char **argv) {
 	const char* codecName = "utf8" ;
 
 	QTextCodec::setCodecForLocale(QTextCodec::codecForName(codecName));
-	QTextCodec::setCodecForCStrings(QTextCodec::codecForName(codecName));
-	QTextCodec::setCodecForTr(QTextCodec::codecForName(codecName));
+
+    //qt5不需要下面2行了,注释了就可以
+//	QTextCodec::setCodecForCStrings(QTextCodec::codecForName(codecName));
+//	QTextCodec::setCodecForTr(QTextCodec::codecForName(codecName));
 
 	//
 	// Test stack

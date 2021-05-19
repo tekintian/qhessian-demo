@@ -21,6 +21,7 @@ public class TestHessian2Servlet
   private ThreadLocal<CharArrayWriter> _threadWriter
     = new ThreadLocal<CharArrayWriter>();
   
+  @Override
   public void methodNull()
   {
   }
@@ -29,6 +30,7 @@ public class TestHessian2Servlet
   // reply tests, testing serialization output
   //
 
+  @Override
   public void replyNull()
   {
   }
@@ -37,11 +39,13 @@ public class TestHessian2Servlet
   // boolean
   //
 
+  @Override
   public Object replyTrue()
   {
     return true;
   }
 
+  @Override
   public Object replyFalse()
   {
     return false;
@@ -53,21 +57,25 @@ public class TestHessian2Servlet
   
   // single byte integers
 
+  @Override
   public int replyInt_0()
   {
     return 0;
   }
 
+  @Override
   public int replyInt_1()
   {
     return 1;
   }
 
+  @Override
   public int replyInt_47()
   {
     return 47;
   }
 
+  @Override
   public int replyInt_m16()
   {
     return -16;
@@ -75,11 +83,13 @@ public class TestHessian2Servlet
 
   // two byte integers
 
+  @Override
   public int replyInt_0x30()
   {
     return 0x30;
   }
 
+  @Override
   public int replyInt_0x7ff()
   {
     return 0x7ff;

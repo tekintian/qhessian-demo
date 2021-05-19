@@ -1,6 +1,7 @@
+#资源目录定义
 SOURCES_DIRS = \
-../qhessian \ 
-source
+../qhessian \ #相对路径,当前的上一级目录中的qhessian文件夹
+source #当前的目录source
 
 defineReplace(sources) {
 	out = 

@@ -1715,7 +1715,8 @@ public slots:
         parser.deleteLater();
 
         QString binaryString;
-		binaryString = QString::fromAscii(binary.data(), binary.size());
+        binaryString = QString::fromLocal8Bit(binary.data(), binary.size());
+        //binaryString = QString::fromAscii(binary.data(), binary.size());
 
         COMPARE(binary.length(), 15);
         COMPARE(binaryString, QString("012345678901234"));
@@ -1733,7 +1734,7 @@ public slots:
         parser.deleteLater();
 
         QString binaryString;
-		binaryString = QString::fromAscii(binary.data(), binary.size());
+        binaryString = QString::fromLocal8Bit(binary.data(), binary.size());
 
         COMPARE(binary.length(), 16);
         COMPARE(binaryString, QString("0123456789012345"));
@@ -1751,7 +1752,7 @@ public slots:
         parser.deleteLater();
 
         QString binaryString;
-		binaryString = QString::fromAscii(binary.data(), binary.size());
+        binaryString = QString::fromLocal8Bit(binary.data(), binary.size());
 
         COMPARE(binary.length(), 1023);
         COMPARE(binaryString, generateString(1023));
@@ -1769,7 +1770,7 @@ public slots:
         parser.deleteLater();
 
         QString binaryString;
-		binaryString = QString::fromAscii(binary.data(), binary.size());
+        binaryString = QString::fromLocal8Bit(binary.data(), binary.size());
 
         COMPARE(binary.length(), 1024);
         COMPARE(binaryString, generateString(1024));
@@ -1787,7 +1788,7 @@ public slots:
         parser.deleteLater();
 
         QString binaryString;
-		binaryString = QString::fromAscii(binary.data(), binary.size());
+        binaryString = QString::fromLocal8Bit(binary.data(), binary.size());
 
         COMPARE(binary.length(), 65536);
         COMPARE(binaryString, generateString(65536));

@@ -16,7 +16,7 @@
 
 namespace {
 	QByteArray fromString(const QString& string) {
-		return string.toAscii();
+        return string.toUtf8();
 	}
 }
 

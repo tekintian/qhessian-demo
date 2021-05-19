@@ -24,6 +24,7 @@ public class TestHessianServlet
   /**
    * Does nothing.
    */
+  @Override
   public void nullCall()
   {
   }
@@ -31,6 +32,7 @@ public class TestHessianServlet
   /**
    * Hello, World.
    */
+  @Override
   public String hello()
   {
     return "Hello, World";
@@ -39,6 +41,7 @@ public class TestHessianServlet
   /**
    * Subtraction
    */
+  @Override
   public int subtract(int a, int b)
   {
     return a - b;
@@ -48,6 +51,7 @@ public class TestHessianServlet
    * Echos the object to the server.
    * <pre>
    */
+  @Override
   public Object echo(Object value)
   {
     return value;
@@ -56,6 +60,7 @@ public class TestHessianServlet
   /**
    * Throws an application fault.
    */
+  @Override
   public void fault()
     throws IOException
   {

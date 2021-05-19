@@ -1,4 +1,4 @@
-# qhessian
+# qhessian demo for qt5
 Qt && C++ implementation of the hessian protocol
 
 QHessian is based on Qt Framework. That means that **you need only qt framework to use all features of hessian**. 
